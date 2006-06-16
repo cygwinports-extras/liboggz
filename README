@@ -1,0 +1,167 @@
+liboggz
+------------------------------------------
+Oggz provides a simple programming interface for reading and writing
+Xiph.Org files and streams.
+
+Runtime requirements:
+  cygwin-1.5.20-1 (>=20060604)
+  libogg0-1.1.2-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.20-1 (>=20060604)
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.1-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.4-1
+
+Canonical website:
+  http://annodex.net/software/liboggz/
+
+Canonical download:
+  http://annodex.net/software/liboggz/download/
+
+-------------------------------------------
+
+Build instructions:
+  unpack liboggz-0.9.5-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./liboggz-0.9.5-X.cygport all
+
+This will create:
+  /usr/src/liboggz-0.9.5-X-src.tar.bz2
+  /usr/src/liboggz-0.9.5-X.tar.bz2
+  /usr/src/liboggz-devel-0.9.5-X.tar.bz2
+  /usr/src/liboggz-doc-0.9.5-X.tar.bz2
+  /usr/src/liboggz1-0.9.5-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(liboggz)
+  /usr/bin/oggz-scan.exe
+  /usr/bin/oggz-validate.exe
+  /usr/bin/oggzdiff
+  /usr/bin/oggzdump.exe
+  /usr/bin/oggzinfo.exe
+  /usr/bin/oggzmerge.exe
+  /usr/bin/oggzrip.exe
+  /usr/share/doc/Cygwin/liboggz-0.9.5.README
+  /usr/share/doc/liboggz-0.9.5/AUTHORS
+  /usr/share/doc/liboggz-0.9.5/COPYING
+  /usr/share/doc/liboggz-0.9.5/ChangeLog
+  /usr/share/doc/liboggz-0.9.5/INSTALL
+  /usr/share/doc/liboggz-0.9.5/README
+  /usr/share/man/man1/oggz-scan.1.gz
+  /usr/share/man/man1/oggz-validate.1.gz
+  /usr/share/man/man1/oggzdiff.1.gz
+  /usr/share/man/man1/oggzdump.1.gz
+  /usr/share/man/man1/oggzinfo.1.gz
+  /usr/share/man/man1/oggzmerge.1.gz
+  /usr/share/man/man1/oggzrip.1.gz
+
+(liboggz1)
+  /usr/bin/cygoggz-1.dll
+
+(liboggz-devel)
+  /usr/include/oggz/oggz.h
+  /usr/include/oggz/oggz_constants.h
+  /usr/include/oggz/oggz_deprecated.h
+  /usr/include/oggz/oggz_io.h
+  /usr/include/oggz/oggz_read.h
+  /usr/include/oggz/oggz_seek.h
+  /usr/include/oggz/oggz_table.h
+  /usr/include/oggz/oggz_write.h
+  /usr/lib/liboggz.dll.a
+  /usr/lib/liboggz.la
+  /usr/lib/pkgconfig/oggz.pc
+
+(liboggz-doc)
+  /usr/share/doc/liboggz-0.9.5/html/doxygen.css
+  /usr/share/doc/liboggz-0.9.5/html/doxygen.png
+  /usr/share/doc/liboggz-0.9.5/html/files.html
+  /usr/share/doc/liboggz-0.9.5/html/globals.html
+  /usr/share/doc/liboggz-0.9.5/html/globals_defs.html
+  /usr/share/doc/liboggz-0.9.5/html/globals_enum.html
+  /usr/share/doc/liboggz-0.9.5/html/globals_eval.html
+  /usr/share/doc/liboggz-0.9.5/html/globals_func.html
+  /usr/share/doc/liboggz-0.9.5/html/globals_type.html
+  /usr/share/doc/liboggz-0.9.5/html/group__basics.html
+  /usr/share/doc/liboggz-0.9.5/html/group__building.html
+  /usr/share/doc/liboggz-0.9.5/html/group__configuration.html
+  /usr/share/doc/liboggz-0.9.5/html/group__force__feed.html
+  /usr/share/doc/liboggz-0.9.5/html/group__hungry.html
+  /usr/share/doc/liboggz-0.9.5/html/group__install.html
+  /usr/share/doc/liboggz-0.9.5/html/group__metric.html
+  /usr/share/doc/liboggz-0.9.5/html/group__read__api.html
+  /usr/share/doc/liboggz-0.9.5/html/group__seek__api.html
+  /usr/share/doc/liboggz-0.9.5/html/group__seek__semantics.html
+  /usr/share/doc/liboggz-0.9.5/html/group__write__api.html
+  /usr/share/doc/liboggz-0.9.5/html/index.html
+  /usr/share/doc/liboggz-0.9.5/html/modules.html
+  /usr/share/doc/liboggz-0.9.5/html/oggz_8h-source.html
+  /usr/share/doc/liboggz-0.9.5/html/oggz_8h.html
+  /usr/share/doc/liboggz-0.9.5/html/oggz__constants_8h-source.html
+  /usr/share/doc/liboggz-0.9.5/html/oggz__constants_8h.html
+  /usr/share/doc/liboggz-0.9.5/html/oggz__deprecated_8h-source.html
+  /usr/share/doc/liboggz-0.9.5/html/oggz__deprecated_8h.html
+  /usr/share/doc/liboggz-0.9.5/html/oggz__io_8h-source.html
+  /usr/share/doc/liboggz-0.9.5/html/oggz__io_8h.html
+  /usr/share/doc/liboggz-0.9.5/html/oggz__read_8h-source.html
+  /usr/share/doc/liboggz-0.9.5/html/oggz__read_8h.html
+  /usr/share/doc/liboggz-0.9.5/html/oggz__seek_8h-source.html
+  /usr/share/doc/liboggz-0.9.5/html/oggz__seek_8h.html
+  /usr/share/doc/liboggz-0.9.5/html/oggz__table_8h-source.html
+  /usr/share/doc/liboggz-0.9.5/html/oggz__table_8h.html
+  /usr/share/doc/liboggz-0.9.5/html/oggz__write_8h-source.html
+  /usr/share/doc/liboggz-0.9.5/html/oggz__write_8h.html
+  /usr/share/doc/liboggz-0.9.5/html/tab_b.gif
+  /usr/share/doc/liboggz-0.9.5/html/tab_l.gif
+  /usr/share/doc/liboggz-0.9.5/html/tab_r.gif
+  /usr/share/doc/liboggz-0.9.5/html/tabs.css
+  /usr/share/doc/liboggz-0.9.5/latex/Helvetica.ttf
+  /usr/share/doc/liboggz-0.9.5/latex/Makefile
+  /usr/share/doc/liboggz-0.9.5/latex/doxygen.sty
+  /usr/share/doc/liboggz-0.9.5/latex/files.tex
+  /usr/share/doc/liboggz-0.9.5/latex/group__basics.tex
+  /usr/share/doc/liboggz-0.9.5/latex/group__building.tex
+  /usr/share/doc/liboggz-0.9.5/latex/group__configuration.tex
+  /usr/share/doc/liboggz-0.9.5/latex/group__force__feed.tex
+  /usr/share/doc/liboggz-0.9.5/latex/group__hungry.tex
+  /usr/share/doc/liboggz-0.9.5/latex/group__install.tex
+  /usr/share/doc/liboggz-0.9.5/latex/group__metric.tex
+  /usr/share/doc/liboggz-0.9.5/latex/group__read__api.tex
+  /usr/share/doc/liboggz-0.9.5/latex/group__seek__api.tex
+  /usr/share/doc/liboggz-0.9.5/latex/group__seek__semantics.tex
+  /usr/share/doc/liboggz-0.9.5/latex/group__write__api.tex
+  /usr/share/doc/liboggz-0.9.5/latex/index.tex
+  /usr/share/doc/liboggz-0.9.5/latex/modules.tex
+  /usr/share/doc/liboggz-0.9.5/latex/oggz_8h.tex
+  /usr/share/doc/liboggz-0.9.5/latex/oggz__constants_8h.tex
+  /usr/share/doc/liboggz-0.9.5/latex/oggz__deprecated_8h.tex
+  /usr/share/doc/liboggz-0.9.5/latex/oggz__io_8h.tex
+  /usr/share/doc/liboggz-0.9.5/latex/oggz__read_8h.tex
+  /usr/share/doc/liboggz-0.9.5/latex/oggz__seek_8h.tex
+  /usr/share/doc/liboggz-0.9.5/latex/oggz__table_8h.tex
+  /usr/share/doc/liboggz-0.9.5/latex/oggz__write_8h.tex
+  /usr/share/doc/liboggz-0.9.5/latex/refman.tex
+
+------------------
+
+Port Notes:
+
+----- version 0.9.5-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

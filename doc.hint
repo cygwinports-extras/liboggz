@@ -1,0 +1,4 @@
+category: Audio Doc
+external-source: liboggz
+sdesc: "Ogg stream read/write library (documentation)"
+ldesc: "Ogg stream read/write library"
