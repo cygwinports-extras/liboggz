@@ -1,5 +1,5 @@
 category: Audio Libs
-requires: cygwin libogg0
+requires: libogg0
 external-source: liboggz
 sdesc: "Ogg stream read/write library (runtime)"
 ldesc: "Ogg stream read/write library"
