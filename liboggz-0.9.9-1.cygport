@@ -1,0 +1,24 @@
+DESCRIPTION="Ogg manipulation library"
+HOMEPAGE="http://www.xiph.org/oggz/"
+SRC_URI="http://downloads.xiph.org/releases/liboggz/${P}.tar.gz
+         http://github.com/kfish/liboggz/raw/master/m4/ac-sys-extra-largefile.m4
+         http://github.com/kfish/liboggz/raw/master/m4/as-ac-expand.m4"
+PATCH_URI="0.9.5-no-undefined.patch"
+
+PKG_NAMES="${PN} ${PN}1 ${PN}-devel"
+PKG_HINTS='setup runtime devel'
+liboggz_CONTENTS="--exclude=html --exclude=latex usr/bin/oggz* usr/share/doc/ usr/share/man/"
+liboggz1_CONTENTS='usr/bin/*-1.dll'
+liboggz_devel_CONTENTS="usr/include/ usr/lib/ usr/share/doc/${PN}/html/"
+PKG_IGNORE="usr/share/doc/${PN}/latex/"
+
+DIFF_EXCLUDES="oggz_off_t_generated.h"
+
+ACLOCAL_FLAGS="-I ."
+
+src_install() {
+	cd ${B}
+	cyginstall docdir=/usr/share/doc/${PN}
+
+	doman ${S}/doc/*.1
+}

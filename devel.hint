@@ -1,5 +1,5 @@
-category: Audio Libs
-requires: libogg-devel
+category: Audio
+requires: libogg-devel liboggz1
 external-source: liboggz
 sdesc: "Ogg stream read/write library (development)"
 ldesc: "Ogg stream read/write library"

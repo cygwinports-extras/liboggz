@@ -1,5 +1,5 @@
 category: Audio
-requires: liboggz1
+requires: libgcc1 libogg0 liboggz1 diffutils util-linux
 external-source: liboggz
 sdesc: "Ogg stream read/write library (utilities)"
 ldesc: "Ogg stream read/write library"
